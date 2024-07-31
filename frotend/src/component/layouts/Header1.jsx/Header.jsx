@@ -170,10 +170,10 @@ function Header() {
                       <Link to="/products">Handlooms</Link>
                     </li>
                     <li>
-                      <Link to="/contact">Collections</Link>
+                      <Link to="/products">Collections</Link>
                     </li>
                     <li>
-                      <Link to="/about_us">Handicrafts</Link>
+                      <Link to="/products">Handicrafts</Link>
                     </li>
                   </ul>
                 </div>
