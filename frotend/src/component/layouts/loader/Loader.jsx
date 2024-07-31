@@ -4,7 +4,7 @@ import './Loader.css';
 
 const CricketBallLoader = () => (
   <div className="cricket-ball-loader">
-    <CricketBall className="spinner" />
+    {/*<CricketBall className="spinner" />*/}
   </div>
 );
 

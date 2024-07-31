@@ -88,32 +88,29 @@ const useStyles = makeStyles((theme) => ({
 const slides = [
   {
     image: require('../../Image/Cricket-wepon/img2.png'),
-    quote:
-      'Unleash Your Passion for Cricket and Embrace the Thrill of the Game',
+    quote: 'Unleash Your Passion for Crafts and Embrace the Arts',
     saleText:
-      'Get in the game with up to 50% off on a wide range of cricket gear`s',
+        'Get in the game with up to 50% off on a wide range of Local Crafts',
     productText: 'Shop Now',
   },
   {
     image: require('../../Image/Cricket-wepon/03.jpg'),
     quote:
-      'Experience the Unparalleled Excitement and Achieve Victory with Our Premium Cricket Equipment',
+        'Experience the Unparalleled Excitement and Achieve Victory with Our Premium Handmade Equipment',
     saleText:
-      'Limited Time Offer: Don`t miss out on the opportunity to upgrade your game',
+        'Limited Time Offer: Don`t miss out on the opportunity to upgrade your Garden',
     productText: 'Buy Now',
   },
   {
     image: require('../../Image/Cricket-wepon/01.jpg'),
-    quote:
-      'Gear up with the Latest Innovations and Dominate the Field like Never Before',
+    quote: 'Gear up with the Latest Innovations ',
     saleText: 'Discover New Arrivals and stay ahead of the competition',
     productText: 'Explore',
   },
   {
     image: require('../../Image/Cricket-wepon/04.jpg'),
-    quote:
-      'Elevate Your Performance and Unleash Your True Cricketing Potential with Our Cutting-Edge Gear',
-    saleText: 'New Arrivals: Enhance your skills and excel on the field',
+    quote: 'Elevate Your Experience',
+    saleText: 'New Arrivals: Enhance your Art skills',
     productText: 'Upgrade Now',
   },
 ];

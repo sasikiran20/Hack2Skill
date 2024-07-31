@@ -119,11 +119,11 @@ const Navbar = ({ toggleHandler }) => {
             height: '100%',
           }}
         >
-          <img
-            src={require('../../Image/logo.png')}
-            alt="logo"
-            className={classes.headerBottom__logo_main}
-          />
+          {/*<img*/}
+          {/*  src={require('../../Image/logo.png')}*/}
+          {/*  alt="logo"*/}
+          {/*  className={classes.headerBottom__logo_main}*/}
+          {/*/>*/}
         </Link>
       </div>
       <Link to="/contact" style={{ textDecoration: 'none', color: 'none' }}>

@@ -60,153 +60,153 @@ function Header() {
   };
 
   return (
-    <>
-      <div className="header">
-        <div className="headerTop">
-          <div className="headerTopLeft">
-            <p>We Offer's Free Shipping </p>
-          </div>
-          <div className="headerTopRight">
-            <div className="headerRetailer">
+      <>
+        <div className="header">
+          <div className="headerTop">
+            <div className="headerTopLeft">
+              <p>We Offer's Free Shipping </p>
+            </div>
+            <div className="headerTopRight">
+              <div className="headerRetailer">
               <span>
                 <LocationOnIcon className="headerRetailer_Svg" />
               </span>
-              <span>FIND LOCATION</span>
-            </div>
+                <span>FIND LOCATION</span>
+              </div>
 
-            <div className="headerFlag">
+              <div className="headerFlag">
               <span>
                 <FlagSelect value={country} onChange={handleCountryChange} />
               </span>
-            </div>
+              </div>
 
-            <div className="headerLogin">
-              {isAuthenticated ? (
-                <Link
-                  to="/account"
-                  style={{ color: 'inherit', textDecoration: 'none' }}
-                >
-                  <button>My Account</button>
-                </Link>
-              ) : (
-                <Link
-                  to="/signup"
-                  style={{ color: 'inherit', textDecoration: 'none' }}
-                >
-                  <button>Sign Up</button>
-                </Link>
-              )}
+              <div className="headerLogin">
+                {isAuthenticated ? (
+                    <Link
+                        to="/account"
+                        style={{ color: 'inherit', textDecoration: 'none' }}
+                    >
+                      <button>My Account</button>
+                    </Link>
+                ) : (
+                    <Link
+                        to="/signup"
+                        style={{ color: 'inherit', textDecoration: 'none' }}
+                    >
+                      <button>Sign Up</button>
+                    </Link>
+                )}
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* nav */}
-        <div className="headerBottom">
-          <div className="headerBottom__logo">
-            <div className="header_mobile_menu">
+          {/* nav */}
+          <div className="headerBottom">
+            <div className="headerBottom__logo">
+              <div className="header_mobile_menu">
               <span>
                 <ReorderIcon
-                  onClick={() => setSideMenu(!sideMenu)}
-                  sx={{
-                    fontSize: 29,
-                    color: 'black',
-                    '&:hover': {
-                      color: '#e7070f',
-                      cursor: 'pointer',
-                    },
-                  }}
+                    onClick={() => setSideMenu(!sideMenu)}
+                    sx={{
+                      fontSize: 29,
+                      color: 'black',
+                      '&:hover': {
+                        color: '#e7070f',
+                        cursor: 'pointer',
+                      },
+                    }}
                 />
                 {sideMenu && (
-                  <Sidebar
-                    handleSideBarMenu={handleSideBarMenu}
-                    isAuthenticated={isAuthenticated}
-                    user={user}
-                  />
+                    <Sidebar
+                        handleSideBarMenu={handleSideBarMenu}
+                        isAuthenticated={isAuthenticated}
+                        user={user}
+                    />
                 )}
               </span>
-              <span>
+                <span>
                 <SearchBar
-                  searchBarActive={searchBarActive}
-                  searchValue={searchValue}
-                  handleCrossButtonClick={handleCrossButtonClick}
-                  handleSearchButtonClick={handleSearchButtonClick}
-                  handleSearchInputChange={handleSearchInputChange}
-                  handleSearchFormSubmit={handleSearchFormSubmit}
+                    searchBarActive={searchBarActive}
+                    searchValue={searchValue}
+                    handleCrossButtonClick={handleCrossButtonClick}
+                    handleSearchButtonClick={handleSearchButtonClick}
+                    handleSearchInputChange={handleSearchInputChange}
+                    handleSearchFormSubmit={handleSearchFormSubmit}
                 />
               </span>
+              </div>
             </div>
-          </div>
-          {!searchBarActive && (
-            <Link to="/">
-              <img
+            {!searchBarActive && (
+                <Link to="/">
+                  {/* <img
                 src={require('../../../Image/logo.png')}
                 alt="logo"
                 className="headerBottom__logo_main"
-              />
-            </Link>
-          )}
+              /> */}
+                </Link>
+            )}
 
-          {/* navmenu */}
+            {/* navmenu */}
 
-          {!searchBarActive && (
-            <div className="headerBottom_navMenu">
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
+            {!searchBarActive && (
+                <div className="headerBottom_navMenu">
+                  <ul>
+                    <li>
+                      <Link to="/">Home</Link>
+                    </li>
+                    {/* <li>
                   <Link to="/products">Products</Link>
-                </li>
-                <li>
+                </li> */}
+                    {/* <li>
                   <Link to="/contact">Contact</Link>
                 </li>
                 <li>
                   <Link to="/about_us">About</Link>
-                </li>
-                <li>
-                  <Link to="/">Antiques</Link>
-                </li>
-                <li>
-                  <Link to="/products">Handlooms</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Collections</Link>
-                </li>
-                <li>
-                  <Link to="/about_us">Handicrafts</Link>
-                </li>
-              </ul>
-            </div>
-          )}
+                </li> */}
+                    <li>
+                      <Link to="/products">Antiques</Link>
+                    </li>
+                    <li>
+                      <Link to="/products">Handlooms</Link>
+                    </li>
+                    <li>
+                      <Link to="/contact">Collections</Link>
+                    </li>
+                    <li>
+                      <Link to="/about_us">Handicrafts</Link>
+                    </li>
+                  </ul>
+                </div>
+            )}
 
-          {/* icons */}
+            {/* icons */}
 
-          <div className="headerBotttom_icons">
-            <div className="search_Bar">
-              <SearchBar
-                searchBarActive={searchBarActive}
-                searchValue={searchValue}
-                handleCrossButtonClick={handleCrossButtonClick}
-                handleSearchButtonClick={handleSearchButtonClick}
-                handleSearchInputChange={handleSearchInputChange}
-                handleSearchFormSubmit={handleSearchFormSubmit}
-              />
-            </div>
-            <span>
+            <div className="headerBotttom_icons">
+              <div className="search_Bar">
+                <SearchBar
+                    searchBarActive={searchBarActive}
+                    searchValue={searchValue}
+                    handleCrossButtonClick={handleCrossButtonClick}
+                    handleSearchButtonClick={handleSearchButtonClick}
+                    handleSearchInputChange={handleSearchInputChange}
+                    handleSearchFormSubmit={handleSearchFormSubmit}
+                />
+              </div>
+              <span>
               <Link
-                to="/cart"
-                style={{ color: 'none', textDecoration: 'none' }}
+                  to="/cart"
+                  style={{ color: 'none', textDecoration: 'none' }}
               >
                 <CartIcon />
               </Link>
             </span>
-            <span>
+              <span>
               <ProfileModal user={user} isAuthenticated={isAuthenticated} />
             </span>
+            </div>
           </div>
         </div>
-      </div>
-    </>
+      </>
   );
 }
 

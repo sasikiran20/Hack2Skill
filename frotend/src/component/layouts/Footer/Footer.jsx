@@ -147,11 +147,11 @@ const Footer = () => {
               <div className="separatorFooter"></div>
               <div className="foot_logo">
                 <Link to="/" style={{ textDecoration: 'none' }}>
-                  <img
-                    src={require('../../../Image/Footer/logo.png')}
-                    alt="cricekt weapon logo"
-                  />
-                  <h1 className="Foot_heading">Cricket Weapon</h1>
+                  {/*<img*/}
+                  {/*  src={require('../../../Image/Footer/logo.png')}*/}
+                  {/*  alt="cricekt weapon logo"*/}
+                  {/*/>*/}
+                  {/*<h1 className="Foot_heading">Cricket Weapon</h1>*/}
                 </Link>
               </div>
 

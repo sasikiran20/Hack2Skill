@@ -29,7 +29,7 @@ function Home() {
       ) : (
         <>
           <>
-            <MataData title="Cricket Weapon" />
+            <MataData title="Antique" />
             <div className="Home_Page">
               <div className="heroSlider_Home">
                 <HeroSlider />;
