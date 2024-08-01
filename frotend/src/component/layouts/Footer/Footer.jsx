@@ -20,23 +20,23 @@ const footMenu = [
       {
         id: 2,
         link: 'FAQs',
-        path: '/terms/conditions',
+        path: '/',
       },
 
       {
         id: 3,
         link: 'Cancel Order',
-        path: '/policy/return',
+        path: '/',
       },
       {
         id: 4,
         link: 'Return Order',
-        path: '/policy/return',
+        path: '/',
       },
       {
         id: 5,
         link: 'Warranty Info',
-        path: '/policy/Terms',
+        path: '/',
       },
     ],
   },
@@ -47,27 +47,27 @@ const footMenu = [
       {
         id: 1,
         link: 'Return Policy',
-        path: '/policy/return',
+        path: '/',
       },
       {
         id: 2,
         link: 'Security',
-        path: '/policy/privacy',
+        path: '/',
       },
       {
         id: 3,
         link: 'Sitemap',
-        path: '/policy/Terms',
+        path: '/',
       },
       {
         id: 4,
         link: 'Privacy Policy',
-        path: '/policy/privacy',
+        path: '/',
       },
       {
         id: 5,
         link: 'T&C',
-        path: '/terms/conditions',
+        path: '/',
       },
     ],
   },
@@ -78,12 +78,12 @@ const footMenu = [
       {
         id: 1,
         link: 'About Us',
-        path: '/about',
+        path: '/',
       },
       {
         id: 2,
         link: 'Contact Us',
-        path: '/contact',
+        path: '/',
       },
       {
         id: 3,
@@ -98,7 +98,7 @@ const footMenu = [
       {
         id: 5,
         link: 'Affiliates',
-        path: '/terms/conditions',
+        path: '/',
       },
     ],
   },
@@ -139,23 +139,23 @@ const Footer = () => {
   const currYear = new Date().getFullYear();
 
   return (
-    <>
-      <footer className="footer">
-        <div className="container">
-          <div className="wrapper_footer footer_wrapper ">
-            <div className="foot_about foot1">
-              <div className="separatorFooter"></div>
-              <div className="foot_logo">
-                <Link to="/" style={{ textDecoration: 'none' }}>
-                  {/*<img*/}
-                  {/*  src={require('../../../Image/Footer/logo.png')}*/}
-                  {/*  alt="cricekt weapon logo"*/}
-                  {/*/>*/}
-                  {/*<h1 className="Foot_heading">Cricket Weapon</h1>*/}
-                </Link>
-              </div>
+      <>
+        <footer className="footer">
+          <div className="container">
+            <div className="wrapper_footer footer_wrapper ">
+              <div className="foot_about foot1">
+                <div className="separatorFooter"></div>
+                <div className="foot_logo">
+                  <Link to="/" style={{ textDecoration: 'none' }}>
+                    {/* <img
+                    src={require('../../../Image/Footer/logo.png')}
+                    alt="cricekt weapon logo"
+                  /> */}
+                    <h1 className="Foot_heading">Cricket Weapon</h1>
+                  </Link>
+                </div>
 
-              {/* <div className="foot_subs">
+                {/* <div className="foot_subs">
                 <h5>Newslatter</h5>
                 <form onSubmit={handleSubmit} className="foot_form">
                   <input
@@ -179,28 +179,28 @@ const Footer = () => {
               </div>
             </div> */}
 
-              <div class="foot_menu_container">
-                {footMenu.map((item) => {
-                  const { id, title, menu } = item;
-                  return (
-                    <div class="foot_menu foot2" key={id}>
-                      <h4>{title}</h4>
-                      <ul>
-                        {menu.map((item) => {
-                          const { id, link, path } = item;
-                          return (
-                            <li key={id}>
-                              <Link to={path}>{link}</Link>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  );
-                })}
-              </div>
+                <div class="foot_menu_container">
+                  {footMenu.map((item) => {
+                    const { id, title, menu } = item;
+                    return (
+                        <div class="foot_menu foot2" key={id}>
+                          <h4>{title}</h4>
+                          <ul>
+                            {menu.map((item) => {
+                              const { id, link, path } = item;
+                              return (
+                                  <li key={id}>
+                                    <Link to={path}>{link}</Link>
+                                  </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                    );
+                  })}
+                </div>
 
-              {/* <div className="foot_links foot3">
+                {/* <div className="foot_links foot3">
               <div className="foot_dowload_appLink">
                 <h5>Download app</h5>
                 <div className="app_links">
@@ -216,9 +216,9 @@ const Footer = () => {
                   </span>
                 </div>
               </div> */}
-              {/* socila media link */}
+                {/* socila media link */}
 
-              {/* <div className="foot_social">
+                {/* <div className="foot_social">
                 {footSocial.map((item) => {
                   const { id, icon, path } = item;
                   return (
@@ -233,11 +233,11 @@ const Footer = () => {
                   );
                 })}
               </div> */}
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* <div className="sub_footer_root">
+          {/* <div className="sub_footer_root">
           <div className="container_Footer">
             <div className="sub_footer_wrapper">
               <div className="foot_policyLink">
