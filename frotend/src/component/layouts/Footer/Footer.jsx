@@ -151,7 +151,7 @@ const Footer = () => {
                     src={require('../../../Image/Footer/logo.png')}
                     alt="cricekt weapon logo"
                   /> */}
-                    <h1 className="Foot_heading">Cricket Weapon</h1>
+                    <h1 className="Foot_heading">Antique</h1>
                   </Link>
                 </div>
 

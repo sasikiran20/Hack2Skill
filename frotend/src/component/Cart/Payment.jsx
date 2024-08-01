@@ -592,7 +592,7 @@ const PaymentComponent = () => {
             >
               By clicking "Place Order", you agree to our
               <Link href="#" className={classes.privacyText}>
-                Cricket Weapon Terms & Conditions
+                Antique Terms & Conditions
               </Link>
             </Typography>
             <Button
