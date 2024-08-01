@@ -139,4 +139,4 @@ https://youtu.be/uF06CSslETs
 | ----------------------------------------------------- |
 | [Nirmal Ganesh](https://github.com/nirmalganesh11)             |
 | [Asish Tony](https://github.com/Asish-15) |
-| [Dharani Mahesh](https://gitlab.com/Mahees_DDM) |
+| [Dharani Mahesh](https://github.com/DharaniMahesh) |
